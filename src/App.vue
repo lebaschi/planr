@@ -5,8 +5,7 @@
         <v-toolbar-title
           >Planr -
           <span v-if="$auth.isAuthenticated"
-            >{{ $auth.user.name }} </span
-          ></v-toolbar-title
+            >{{ $auth.user.name }} </span ></v-toolbar-title
         >
       </div>
       <v-spacer></v-spacer>
@@ -17,7 +16,7 @@
      <a href="https://discord.com/" target="_blank"> <img src="../src/img/discord.svg"  height="50px" width="50px" alt=""></a>
 
       <v-btn v-if="!$auth.isAuthenticated" @click="login()" text>
-        Log ind
+        <h1>Log ind</h1>
       </v-btn>
       <v-btn v-else @click="logout()" text>
         Log ud
@@ -283,6 +282,8 @@ export default {
   }
 };
 </script>
+
+
 <style scoped>
 .strike {
   text-decoration: line-through;
