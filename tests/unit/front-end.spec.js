@@ -6,13 +6,13 @@ import App from '@/App.vue'
 
 describe('App', () => {
 
-    const wrapper = mount(App)
+   const wrapper = mount(App)
 
-    it('renders correct title', () => {
+    it('indlæser titlen korrekt', () => {
         expect(wrapper.html()).toContain('<h1>Log ind</h1>')
     })
 
-    it('has a button', () => {
+    it('har en knap', () => {
         expect(wrapper.contains('button')).toBe(true)
     })
 })

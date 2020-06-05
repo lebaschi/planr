@@ -4,7 +4,7 @@ import App from '@/App.vue'
 jest.mock("firebase/app", ()=> ({
     auth(){
         return {
-            onAuthStateChanged(fnc){
+            isAuthenticated(fnc){
                 return fnc(true);
             },
         
